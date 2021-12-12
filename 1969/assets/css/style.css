@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    padding: 0 25%;
+}
+
+.name {
+    color: #2778f2;
+    font-size: 25px;
+}
+
+.year {
+    color: #2778f2;
+    font-size: 15px;
+}
+
+#header {
+    width: 800px;
+    background-color: #dce0e6;
+    height: 500px;
+    text-align: center;
+}
+
+#header .avt {
+    margin: 40px 0 20px 0;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#header .content {
+    margin-top: 20px;
+    float: left;
+    width: calc(100%/2);
+}
+
+.information {
+    color: #2778f2;
+}
+
+.call {
+    font-size: 18px;
+}
+
+.phone-number,
+.link {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link {
+    color: #2778f2;
+}
+
+.ib {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2778f2;
+    padding: 7px 22px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 25px;
+}

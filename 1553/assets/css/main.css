@@ -1,0 +1,23 @@
+#main {
+    padding: 0 30%;
+}
+
+.section {
+    text-align: justify;
+}
+
+.sub-section {
+    padding-left: 5%;
+}
+
+.sub-section li {
+    list-style-type: none;
+    text-align: justify;
+}
+
+h1,
+h2 {
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,16 @@
+#main {
+    width: 800px;
+    padding-left: 25%;
+}
+
+.title {
+    font-weight: 400;
+}
+
+.text-title {
+    font-style: italic;
+}
+
+.text-about {
+    font-size: 25px;
+}
