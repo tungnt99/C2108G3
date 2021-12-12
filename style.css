@@ -1,0 +1,96 @@
+html {
+    background-color: rgb(255, 255, 240);
+}
+
+#main {
+    background-color: rgb(255, 255, 240);
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+#content {
+    margin: 3% 20% 0 20%;
+    display: flex;
+}
+
+.email {
+    border: 1px solid #333;
+    padding: 0 7% 0 7%;
+    width: 400px;
+    background-color: #ddffee;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-nav {
+    padding: 5px 0;
+    display: flex;
+}
+
+.input-form {
+    flex: 1;
+}
+
+.label {
+    min-width: 90px;
+}
+
+.submit-btn {
+    margin: 5px 0 20px 90px;
+}
+
+.help-btn {
+    position: absolute;
+    margin: 50px 0 0 600px;
+    float: right;
+}
+
+.sub-help:active {
+    background-color: #045859;
+}
+
+.sub-help {
+    width: 80px;
+    height: 45px;
+    font-size: 25px;
+    background-color: #05f1f5;
+}
+
+.help-description {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 240);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.help-content {
+    background-color: #3af2bb;
+    width: 600px;
+    height: 500px;
+}
+
+.open {
+    display: flex;
+}
+
+.body {
+    padding: 0 20px;
+}
+
+.body h4,
+p {
+    margin: 5px 0;
+}
+
+.close-btn {
+    float: right;
+    padding: 20px 30px;
+}
