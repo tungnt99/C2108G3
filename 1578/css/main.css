@@ -1,0 +1,27 @@
+.form {
+    width: 450px;
+    /* background-color: red; */
+}
+
+.form-nav {
+    padding: 5px 0;
+    display: flex;
+}
+
+.form-input {
+    /* margin: 5px 0; */
+    width: 200px;
+    height: 25px;
+    flex: 1;
+}
+
+.label {
+    min-width: 200px;
+}
+
+.canel-btn,
+.register-btn {
+    border: 2px solid #257acf;
+    border-radius: 3px;
+    cursor: pointer;
+}

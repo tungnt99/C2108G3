@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Jobs4You</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <h1>Registration Form - Job Seekers</h1>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="form-nav">
+                    <label for="name" class="label">Login Name:</label>
+                    <input required id="name" type="text" class="form-input">
+                </div>
+                <div class="form-nav">
+                    <label for="pass" class="label">Password:</label>
+                    <input required id="pass" type="password" class="form-input">
+                </div>
+                <div class="form-nav">
+                    <label for="word" class="label">Re-enter Password:</label>
+                    <input required id="word" type="password" class="form-input">
+                </div>
+                <div class="form-nav">
+                    <label for="" class="label">Gender:</label>
+                    <input type="radio" name="Gender" value="male"> Male
+                    <input type="radio" name="Gender" value="male"> Female
+                </div>
+                <div class="form-nav">
+                    <label for="" class="label">Experience (In Years):</label>
+                    <select name="experience" id="">
+                        <option hidden>---select---</option>
+                        <option value="">0-1</option>
+                        <option value="">1-2</option>
+                        <option value="">2-3</option>
+                        <option value="">3+</option>
+                    </select>
+                </div>
+                <div class="button-click">
+                    <button class="register-btn js-register">Register</button>
+                    <button class="canel-btn">Canel</button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+    <script>
+        const registerBtn = document.querySelector('.js-register')
+
+        function showRegister() {
+            alert('Thank you for registering on EasyJobs4You')
+        }
+        registerBtn.addEventListener('click', showRegister)
+    </script>
+</body>
+
+</html>

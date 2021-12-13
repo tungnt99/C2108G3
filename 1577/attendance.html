@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Attendance Sheet</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Attendance Sheet</h1>
+            <div class="text-header">
+                <ul>
+                    <li><button>Week 1</button></li>
+                    <li><button class="week-2 js-week2">Week 2</button></li>
+                    <li><button class="week-2 js-week2">Week 3</button></li>
+                    <li><button class="week-2 js-week2">Week 4</button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <table border="1" style="background-color: #FFFFDD; text-align: center; border: 1px solid #D0D0D0;">
+                <thead>
+                    <tr style="background-color: rgb(255, 185, 115); font-family: Arial; font-size: 1em;">
+                        <th colspan="8">Week 1</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>John</th>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Smith</th>
+                        <td></td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th>David</th>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Mark</th>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td></td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- week2 -->
+    <div class="body2 js-body2">
+        <div class="text-content js-content">
+
+            <table border="1" style="background-color: #FFFFDD; text-align: center; border: 1px solid #D0D0D0;">
+                <thead>
+                    <tr style="background-color: rgb(255, 185, 115); font-family: Arial; font-size: 1em;">
+                        <th colspan="8">Week 2</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>John</th>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Smith</th>
+                        <td></td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th>David</th>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>P</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Mark</th>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td></td>
+                        <td>P</td>
+                        <td></td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="close-btn js-close">
+                <button>Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const weekBtns = document.querySelectorAll('.js-week2')
+        const weekDesk = document.querySelector('.js-body2')
+        const content = document.querySelector('.js-content')
+        const closeBtn = document.querySelector('.js-close')
+
+        function showWeek() {
+            weekDesk.classList.add('open')
+        }
+
+        function hideWeek() {
+            weekDesk.classList.remove('open')
+        }
+        for (const weekBtn of weekBtns) {
+            weekBtn.addEventListener('click', showWeek)
+        }
+        weekDesk.addEventListener('click', hideWeek)
+            // weekBtn.addEventListener('click', showWeek)
+        closeBtn.addEventListener('click', hideWeek)
+
+        // week 3
+    </script>
+</body>
+
+</html>
